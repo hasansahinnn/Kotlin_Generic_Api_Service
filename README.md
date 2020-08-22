@@ -12,7 +12,7 @@ Add this prop like
   
      val apiBaseClient=ApiClient("")
 
-     apiBaseClient.Get<Base>(Base(),"users/1"){ isSuccess, response, message ->
+     apiBaseClient.Get<Users>(Users(),"users/1"){ isSuccess, response, message ->
          if (isSuccess)
              println(response)
         else 
