@@ -11,6 +11,12 @@
 			   println("Data==[]")
 		   }
 	   } else {
+		   println("Hata!!")
+		   println(message)
+	   }
+   }
+   println("Get jsonplaceholder Todos..")
+	  apiBaseClient.Get<todo>(todo(),"todos/1"){ isSuccess, response, message ->
 		  if (isSuccess) {
 			  if(response!=null){
 				  println(response)
