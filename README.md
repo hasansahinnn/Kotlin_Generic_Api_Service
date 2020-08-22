@@ -5,7 +5,7 @@ implement IHttpModel to your Class
 
 Add this prop like 
   - @Transient  override var dataList: MutableList<Base>?= mutableListOf<Base>()
-  @Transient : That code removes dataList properties when you serialize
+  - @Transient : That code removes dataList properties when you serialize
   
   
   ------------------  Usage   ----------------
